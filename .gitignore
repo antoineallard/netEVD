@@ -3,6 +3,7 @@
 **/rough_results
 
 **/run_simulations_*.py
+**/run_simulations_*.sh
 **/*.png
 
 abc/probabilistic_epidemic_forecasting/LICENSE
