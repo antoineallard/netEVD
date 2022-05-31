@@ -2,6 +2,19 @@
 
 **/rough_results
 
+**/run_simulations_*.py
+**/*.png
+
+abc/probabilistic_epidemic_forecasting/LICENSE
+
+SLED_data/**
+
+abc/simulations_NBinom_default_p0/Figure3.pdf
+abc/simulations_NBinom_default_p0/plot_figure_3.ipynb
+abc/simulations_NBinom_default_p0/results/config_dict.pickle
+abc/simulations_NBinom_default_p0/results/refined_simulation_results.txt
+abc/simulations_NBinom_default_p0/results/simulation_results.txt
+
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
