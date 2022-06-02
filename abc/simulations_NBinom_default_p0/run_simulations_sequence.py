@@ -28,7 +28,7 @@ config_dict = {'param_A': {'distribution': 'uniform',              # R0 paramete
                'seed': 1,                                          # number of initial infected individuals
                'max_cases': 1e4,                                   # maximum cases before the single simulation is stopped
                'max_time': 100,                                    # length of the simulations in days (day 0 included)
-               'N_simulations': 10000000,                          # total number of ABC iteration
+               'N_simulations': 2000000,                          # total number of ABC iteration
                'excess_outward_degree_distributions': 'NBinom',    # distribution of the number of secondary infections
                'custom_p0': None,                                  # p0 will be fixed automatically
                'tolerances': [[90],[30]],                          # rough window of tolerance [[day,day,day...],[tol,tol,tol...]]
