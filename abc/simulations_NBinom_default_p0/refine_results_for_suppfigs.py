@@ -1,3 +1,4 @@
+import os
 import sys
 sys.path.insert(1, '../probabilistic_epidemic_forecasting/')
 
@@ -18,6 +19,7 @@ config_dict = load_config_dict(folder_path)
 postprod = PostProd(config_dict, new_path + suffix + '.txt')
 # postprod.refined_dataframe = pd.read_csv(new_path + suffix + '.txt').iloc[: , 1:]
 postprod.compute_and_draw_small_size_components_distributions(color='blue', s_max=100, normalized=True, fig_name="small_comp_distr" + suffix)
+os.remove(folder_path + '/' + "small_comp_distr" + suffix + '.png')
 print("")
 
 
@@ -29,6 +31,7 @@ config_dict = load_config_dict(folder_path)
 postprod = PostProd(config_dict, new_path + suffix + '.txt')
 # postprod.refined_dataframe = pd.read_csv(new_path + suffix + '.txt').iloc[: , 1:]
 postprod.compute_and_draw_small_size_components_distributions(color='blue', s_max=100, normalized=True, fig_name="small_comp_distr" + suffix)
+os.remove(folder_path + '/' + "small_comp_distr" + suffix + '.png')
 print("")
 
 
@@ -41,6 +44,7 @@ config_dict = load_config_dict(folder_path)
 postprod = PostProd(config_dict, new_path + suffix + '.txt')
 # postprod.refined_dataframe = pd.read_csv(new_path + suffix + '.txt').iloc[: , 1:]
 postprod.compute_and_draw_small_size_components_distributions(color='blue', s_max=100, normalized=True, fig_name="small_comp_distr" + suffix)
+os.remove(folder_path + '/' + "small_comp_distr" + suffix + '.png')
 print("")
 
 
@@ -52,6 +56,7 @@ config_dict = load_config_dict(folder_path)
 postprod = PostProd(config_dict, new_path + suffix + '.txt')
 # postprod.refined_dataframe = pd.read_csv(new_path + suffix + '.txt').iloc[: , 1:]
 postprod.compute_and_draw_small_size_components_distributions(color='blue', s_max=100, normalized=True, fig_name="small_comp_distr" + suffix)
+os.remove(folder_path + '/' + "small_comp_distr" + suffix + '.png')
 print("")
 
 
@@ -63,6 +68,7 @@ config_dict = load_config_dict(folder_path)
 postprod = PostProd(config_dict, new_path + suffix + '.txt')
 # postprod.refined_dataframe = pd.read_csv(new_path + suffix + '.txt').iloc[: , 1:]
 postprod.compute_and_draw_small_size_components_distributions(color='blue', s_max=100, normalized=True, fig_name="small_comp_distr" + suffix)
+os.remove(folder_path + '/' + "small_comp_distr" + suffix + '.png')
 print("")
 
 
@@ -74,6 +80,7 @@ config_dict = load_config_dict(folder_path)
 postprod = PostProd(config_dict, new_path + suffix + '.txt')
 # postprod.refined_dataframe = pd.read_csv(new_path + suffix + '.txt').iloc[: , 1:]
 postprod.compute_and_draw_small_size_components_distributions(color='blue', s_max=100, normalized=True, fig_name="small_comp_distr" + suffix)
+os.remove(folder_path + '/' + "small_comp_distr" + suffix + '.png')
 print("")
 
 
@@ -85,6 +92,7 @@ config_dict = load_config_dict(folder_path)
 postprod = PostProd(config_dict, new_path + suffix + '.txt')
 # postprod.refined_dataframe = pd.read_csv(new_path + suffix + '.txt').iloc[: , 1:]
 postprod.compute_and_draw_small_size_components_distributions(color='blue', s_max=100, normalized=True, fig_name="small_comp_distr" + suffix)
+os.remove(folder_path + '/' + "small_comp_distr" + suffix + '.png')
 print("")
 
 
@@ -96,4 +104,5 @@ config_dict = load_config_dict(folder_path)
 postprod = PostProd(config_dict, new_path + suffix + '.txt')
 # postprod.refined_dataframe = pd.read_csv(new_path + suffix + '.txt').iloc[: , 1:]
 postprod.compute_and_draw_small_size_components_distributions(color='blue', s_max=100, normalized=True, fig_name="small_comp_distr" + suffix)
+os.remove(folder_path + '/' + "small_comp_distr" + suffix + '.png')
 print("")

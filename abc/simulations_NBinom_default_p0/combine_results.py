@@ -5,24 +5,31 @@ import pickle
 dirs = glob.glob("../rough_results/simulations_NBinom_default_p0_*")
 
 
-file = "explored_parameters.txt"
-for dir in dirs:
-     if os.path.isfile(dir + "/" + file):
-         # print(dir + "/" + file)
-         os.remove(dir + "/" + file)
+# file = "explored_parameters.txt"
+# for dir in dirs:
+#      if os.path.isfile(dir + "/" + file):
+#          # print(dir + "/" + file)
+#          os.remove(dir + "/" + file)
 
 
-file = "simulation_results.txt"
-cmd = "head -n 1 " + dirs[0] + "/" + file + " > " + "results/" + file
-# print(cmd)
-os.system(cmd)
-cmd = ["awk 'FNR>1'"]
-for dir in dirs:
-    cmd.append(dir + "/" + file)
-cmd.append(">>")
-cmd.append("results/" + file)
-# print(" ".join(cmd))
-os.system(" ".join(cmd))
+# file = "simulation_results.txt"
+# for dir in dirs:
+#      if os.path.isfile(dir + "/" + file):
+#          # print(dir + "/" + file)
+#          os.remove(dir + "/" + file)
+
+
+# file = "simulation_results.txt"
+# cmd = "head -n 1 " + dirs[0] + "/" + file + " > " + "results/" + file
+# # print(cmd)
+# os.system(cmd)
+# cmd = ["awk 'FNR>1'"]
+# for dir in dirs:
+#     cmd.append(dir + "/" + file)
+# cmd.append(">>")
+# cmd.append("results/" + file)
+# # print(" ".join(cmd))
+# os.system(" ".join(cmd))
 
 
 file = "refined_simulation_results.txt"
@@ -37,6 +44,33 @@ cmd.append(">>")
 cmd.append("results/" + file)
 # print(" ".join(cmd))
 os.system(" ".join(cmd))
+
+
+# file = "small_comp_distr.txt"
+# for dir in dirs:
+#      if os.path.isfile(dir + "/" + file):
+#          # print(dir + "/" + file)
+#          os.remove(dir + "/" + file)
+
+# file = "ABC_figure.png"
+# for dir in dirs:
+#      if os.path.isfile(dir + "/" + file):
+#          # print(dir + "/" + file)
+#          os.remove(dir + "/" + file)
+
+
+# file = "prior_&_posterior_param_distr.png"
+# for dir in dirs:
+#      if os.path.isfile(dir + "/" + file):
+#          # print(dir + "/" + file)
+#          os.remove(dir + "/" + file)
+
+
+# file = "small_comp_distr.png"
+# for dir in dirs:
+#      if os.path.isfile(dir + "/" + file):
+#          # print(dir + "/" + file)
+#          os.remove(dir + "/" + file)
 
 
 with open(dirs[0] + '/config_dict.pickle', 'rb') as file:

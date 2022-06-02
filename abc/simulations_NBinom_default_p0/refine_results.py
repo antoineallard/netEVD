@@ -1,3 +1,4 @@
+import os
 import sys
 sys.path.insert(1, '../probabilistic_epidemic_forecasting/')
 
@@ -13,3 +14,5 @@ refine_tolerance(raw_path, new_path, simulation_path, tol)
 config_dict = load_config_dict(folder_path)
 postprod = PostProd(config_dict, new_path)
 postprod.compute_and_draw_small_size_components_distributions(color='blue', s_max=100, normalized=True)
+
+os.remove(folder_path + '/small_comp_distr.png')
