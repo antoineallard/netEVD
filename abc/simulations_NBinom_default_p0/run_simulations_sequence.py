@@ -38,7 +38,7 @@ config_dict = {'param_A': {'distribution': 'uniform',              # R0 paramete
                'notes': ''}
 
 
-for i in range(200):
+for i in range(300):
 
     folder_name = 'simulations_NBinom_default_p0_{:03d}'.format(i)
 
