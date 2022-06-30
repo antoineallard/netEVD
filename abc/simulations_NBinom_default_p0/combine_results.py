@@ -80,7 +80,7 @@ for dir in dirs[1:]:
         meta_data = pickle.load(file)
         configuration["N_simulations"] += meta_data["N_simulations"]
 configuration['path'] =  'results'
-configuration['data_path'] =  "../../SLED_data/lab-confirmed_database.txt"
+configuration['data_path'] =  "../../data/sled/lab-confirmed_database.txt"
 configuration['folder_path'] = ''
 configuration['folder_name'] = ''
 with open("results/" + 'config_dict.pickle', 'wb') as file:

@@ -6,8 +6,8 @@
 
 abc/probabilistic_epidemic_forecasting/LICENSE
 
-SLED_data/*
-!SLED_data/README.md
+data/sled/*
+!data/sled/README.md
 
 abc/simulations_NBinom_default_p0/Figure3.pdf
 abc/simulations_NBinom_default_p0/plot_figure_3.ipynb

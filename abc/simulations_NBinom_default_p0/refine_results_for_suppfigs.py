@@ -5,7 +5,7 @@ sys.path.insert(1, '../probabilistic_epidemic_forecasting/')
 from probabilistic_epidemic_forecasting.refine_results import PostProd, refine_tolerance, load_config_dict
 
 folder_path = 'results'
-raw_path = '../../SLED_data/lab-confirmed_database.txt'
+raw_path = '../../data/sled/lab-confirmed_database.txt'
 simulation_path = folder_path + '/refined_simulation_results.txt'
 new_path = folder_path + '/newly_refined_simulation_results'
 

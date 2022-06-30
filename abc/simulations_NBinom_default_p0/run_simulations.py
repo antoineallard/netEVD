@@ -31,7 +31,7 @@ if __name__ == "__main__":
                    'excess_outward_degree_distributions': 'NBinom',    # distribution of the number of secondary infections
                    'custom_p0': None,                                  # p0 will be fixed automatically
                    'tolerances': [[90],[30]],                          # rough window of tolerance [[day,day,day...],[tol,tol,tol...]]
-                   'data_path': "../../SLED_data/lab-confirmed_database.txt",
+                   'data_path': "../../data/sled/lab-confirmed_database.txt",
                    'folder_path': '../rough_results/',
                    'folder_name': 'simulations_NBinom_default_p0_46',
                    'notes': ''}
