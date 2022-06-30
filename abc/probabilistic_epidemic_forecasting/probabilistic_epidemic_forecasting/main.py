@@ -228,7 +228,7 @@ class Simulation:
 
                 #Discard times overs maximum time studied
                 new_wave_times = list(absolute_transmitted_times[absolute_transmitted_times < self.max_time])
-                new_cases = len(new_wave_times) #Why the -1 (investigation needed)
+                new_cases = len(new_wave_times)
 
                 #Finally add new generation to the total number of cases and start over
                 all_infected_times += new_wave_times
